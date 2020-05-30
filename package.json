@@ -1,0 +1,25 @@
+{
+  "name": "xades_hsm",
+  "version": "1.0.0",
+  "description": "An implementation of XAdES intended for PKCS#11 HSM",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chronorus/xades_hsm.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chronorus/xades_hsm/issues"
+  },
+  "homepage": "https://github.com/chronorus/xades_hsm#readme",
+  "dependencies": {
+    "@peculiar/webcrypto": "^1.1.1",
+    "elementtree": "^0.1.7",
+    "xadesjs": "^2.0.18",
+    "xml2js": "^0.4.23"
+  }
+}
