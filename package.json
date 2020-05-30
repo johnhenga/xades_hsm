@@ -19,6 +19,7 @@
   "dependencies": {
     "@peculiar/webcrypto": "^1.1.1",
     "elementtree": "^0.1.7",
+    "js2xmlparser": "^4.0.1",
     "xadesjs": "^2.0.18",
     "xml2js": "^0.4.23"
   }

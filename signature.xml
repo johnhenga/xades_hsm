@@ -1,0 +1,56 @@
+ 
+<ds:Signature Id="id-a521f37e269e"
+    xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+    <ds:SignedInfo>
+        <ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+        <ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+        <ds:Reference>
+            <ds:Transforms>
+                <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+            </ds:Transforms>
+            <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
+            <ds:DigestValue>/Sqg0JOBPdFX0TFMERc2WEdDbz5kX7FQ9CaXhNcjVBAiEQ7jwP0T0DIx3xkuBTsQmrIZLowJX8SWmFjNHhfyRA==</ds:DigestValue>
+        </ds:Reference>
+        <ds:Reference URI="#xades-id-a521f37e269e" Type="http://uri.etsi.org/01903#SignedProperties">
+            <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+            <ds:DigestValue>MigdoO3JHwhgGDkiZzToheYeJZk=</ds:DigestValue>
+        </ds:Reference>
+    </ds:SignedInfo>
+    <ds:SignatureValue>SEtMPPmZ6x9uOZDVW+QEx9li80Q5wFBxvhgi3kVtDDCI8gvr6KD26Lzwe6EB8iXeakinMvCdOTsXfY90jBCTXOeK3X/u9X21v0osxk6IrfKjSlWr8+Lf7vxAlWlvFCqLETBO8DoDM+6IjNAzjZ7JI4etPg6mnTyUcsCWRIUuv/k=</ds:SignatureValue>
+    <ds:KeyInfo>
+        <ds:KeyValue>
+            <ds:RSAKeyValue>
+                <ds:Modulus>6FWp9dctGDT17LjYwqmEY0Oqiul2b+Gtt+BpV1OBu6emiZm/OseYKeWTZtr0MhJP1XyNU+ZNhgabDfPAOcSkKm4P6JtvGh+9zDVwQrbu/eZexzkVRKiKyT7xrU90ycZvRIWClQFqeqMJ6vEYcYtxpLXiQKziIw/qcu2b+qHpArM=</ds:Modulus>
+                <ds:Exponent>AQAB</ds:Exponent>
+            </ds:RSAKeyValue>
+        </ds:KeyValue>
+    </ds:KeyInfo>
+    <ds:Object>
+        <xades:QualifyingProperties Target="#id-a521f37e269e"
+            xmlns:xades="http://uri.etsi.org/01903/v1.3.2#">
+            <xades:SignedProperties Id="xades-id-a521f37e269e">
+                <xades:SignedSignatureProperties>
+                    <xades:SigningTime>2020-05-30T03:06:17.475Z</xades:SigningTime>
+                    <xades:SigningCertificate>
+                        <xades:Cert>
+                            <xades:CertDigest>
+                                <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+                                <ds:DigestValue>8bzdEXsVVBc4E6Qhg8VNuX46fhCdCvqY9LzTJnVKA1E=</ds:DigestValue>
+                            </xades:CertDigest>
+                            <xades:IssuerSerial>
+                                <ds:X509IssuerName>C=NL, O=QuoVadis Trustlink B.V., OU=Issuing Certification Authority, CN=QuoVadis EU Issuing Certification Authority G2</ds:X509IssuerName>
+                                <ds:X509SerialNumber>694395474722160626358886281620874695673047986886</ds:X509SerialNumber>
+                            </xades:IssuerSerial>
+                        </xades:Cert>
+                    </xades:SigningCertificate>
+                    <xades:SignatureProductionPlace>
+                        <xades:City>City</xades:City>
+                        <xades:StateOrProvince>State</xades:StateOrProvince>
+                        <xades:PostalCode>Code</xades:PostalCode>
+                        <xades:CountryName>Country</xades:CountryName>
+                    </xades:SignatureProductionPlace>
+                </xades:SignedSignatureProperties>
+            </xades:SignedProperties>
+        </xades:QualifyingProperties>
+    </ds:Object>
+</ds:Signature>
