@@ -21,6 +21,8 @@
     "elementtree": "^0.1.7",
     "js2xmlparser": "^4.0.1",
     "xadesjs": "^2.0.18",
-    "xml2js": "^0.4.23"
+    "xml-parse": "^0.4.0",
+    "xml2js": "^0.4.23",
+    "xml2json": "^0.12.0"
   }
 }

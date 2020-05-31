@@ -37,7 +37,7 @@ function SignXml(xmlString, keys, algorithm) {
     return Promise.resolve()
         .then(() => {
             xmlString = fs.readFileSync("ETDA-invoice.xml", "utf-8");
-            console.log('ETDA-invoice', xmlString);
+            console.log('ETDA-invoice', xmlString);     
             var xmlDoc = xadesjs.Parse(xmlString);
             var signedXml = new xadesjs.SignedXml();
 

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rsm:TaxInvoice_CrossIndustryInvoice
+    xmlns:ram="urn:etda:uncefact:data:standard:TaxInvoice_ReusableAggregateBusinessInformationEntity:2"
+    xmlns:rsm="urn:etda:uncefact:data:standard:TaxInvoice_CrossIndustryInvoice:2"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="urn:etda:uncefact:data:standard:TaxInvoice_CrossIndustryInvoice:2">
+    <rsm:ExchangedDocumentContext>
+        <ram:GuidelineSpecifiedDocumentContextParameter>
+            <ram:ID schemeAgencyID="ETDA" schemeVersionID="v2.0">ER3-2560</ram:ID>
+        </ram:GuidelineSpecifiedDocumentContextParameter>
+    </rsm:ExchangedDocumentContext>
+    <rsm:ExchangedDocument>
+        <ram:ID>INV01</ram:ID>
+        <ram:Name>ใบกำกับภาษี</ram:Name>
+        <ram:TypeCode>388</ram:TypeCode>
+        <ram:IssueDateTime>2017-12-19T00:00:00.000</ram:IssueDateTime>
+        <ram:CreationDateTime>2017-12-19T00:00:00.000</ram:CreationDateTime>
+    </rsm:ExchangedDocument>
+    <rsm:SupplyChainTradeTransaction>
+        <ram:ApplicableHeaderTradeAgreement>
+            <ram:SellerTradeParty>
+                <ram:Name>บริษัท ขยันหมั่นเพียร จำกัด</ram:Name>
+                <ram:SpecifiedTaxRegistration>
+                    <ram:ID schemeID="TXID">050553600284300001</ram:ID>
+                </ram:SpecifiedTaxRegistration>
+                <ram:DefinedTradeContact>
+                    <ram:EmailURIUniversalCommunication>
+                        <ram:URIID>natueal@example.com</ram:URIID>
+                    </ram:EmailURIUniversalCommunication>
+                    <ram:TelephoneUniversalCommunication>
+                        <ram:CompleteNumber>+66-81234567</ram:CompleteNumber>
+                    </ram:TelephoneUniversalCommunication>
+                </ram:DefinedTradeContact>
+                <ram:PostalTradeAddress>
+                    <ram:PostcodeCode>71180</ram:PostcodeCode>
+                    <ram:LineOne>สำนักงานอุทยานแห่งชาติ </ram:LineOne>
+                    <ram:CityName>7107</ram:CityName>
+                    <ram:CitySubDivisionName>710705</ram:CitySubDivisionName>
+                    <ram:CountryID schemeID="3166-1 alpha-2">TH</ram:CountryID>
+                    <ram:CountrySubDivisionID>71</ram:CountrySubDivisionID>
+                    <ram:BuildingNumber>777/777 </ram:BuildingNumber>
+                </ram:PostalTradeAddress>
+            </ram:SellerTradeParty>
+            <ram:BuyerTradeParty>
+                <ram:Name>บริษัททำดีจำกัด</ram:Name>
+                <ram:SpecifiedTaxRegistration>
+                    <ram:ID schemeID="TXID">222222222222200000</ram:ID>
+                </ram:SpecifiedTaxRegistration>
+                <ram:DefinedTradeContact>
+                    <ram:EmailURIUniversalCommunication>
+                        <ram:URIID>patiw@example.com</ram:URIID>
+                    </ram:EmailURIUniversalCommunication>
+                    <ram:TelephoneUniversalCommunication>
+                        <ram:CompleteNumber>+66-97778889</ram:CompleteNumber>
+                    </ram:TelephoneUniversalCommunication>
+                </ram:DefinedTradeContact>
+                <ram:PostalTradeAddress>
+                    <ram:PostcodeCode>11344</ram:PostcodeCode>
+                    <ram:LineOne>หาดทุ่งวัวแล่น</ram:LineOne>
+                    <ram:CityName>8603</ram:CityName>
+                    <ram:CitySubDivisionName>860303</ram:CitySubDivisionName>
+                    <ram:CountryID schemeID="3166-1 alpha-2">TH</ram:CountryID>
+                    <ram:CountrySubDivisionID>86</ram:CountrySubDivisionID>
+                    <ram:BuildingNumber>77/79</ram:BuildingNumber>
+                </ram:PostalTradeAddress>
+            </ram:BuyerTradeParty>
+        </ram:ApplicableHeaderTradeAgreement>
+        <ram:ApplicableHeaderTradeDelivery>
+            <ram:ShipToTradeParty>
+                <ram:DefinedTradeContact>
+                    <ram:PersonName>สมพร ใจงาม</ram:PersonName>
+                </ram:DefinedTradeContact>
+            </ram:ShipToTradeParty>
+        </ram:ApplicableHeaderTradeDelivery>
+        <ram:ApplicableHeaderTradeSettlement>
+            <ram:InvoiceCurrencyCode listID="ISO 4217 3A">THB</ram:InvoiceCurrencyCode>
+            <ram:ApplicableTradeTax>
+                <ram:TypeCode>VAT</ram:TypeCode>
+                <ram:CalculatedRate>7</ram:CalculatedRate>
+                <ram:BasisAmount>9999</ram:BasisAmount>
+                <ram:CalculatedAmount>699.93</ram:CalculatedAmount>
+            </ram:ApplicableTradeTax>
+            <ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+                <ram:LineTotalAmount>9999</ram:LineTotalAmount>
+                <ram:TaxBasisTotalAmount>9999</ram:TaxBasisTotalAmount>
+                <ram:TaxTotalAmount>699.93</ram:TaxTotalAmount>
+                <ram:GrandTotalAmount>10698.93</ram:GrandTotalAmount>
+            </ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+        </ram:ApplicableHeaderTradeSettlement>
+        <ram:IncludedSupplyChainTradeLineItem>
+            <ram:AssociatedDocumentLineDocument>
+                <ram:LineID>1</ram:LineID>
+            </ram:AssociatedDocumentLineDocument>
+            <ram:SpecifiedTradeProduct>
+                <ram:Name>สินค้าทดสอบ</ram:Name>
+            </ram:SpecifiedTradeProduct>
+            <ram:SpecifiedLineTradeAgreement>
+                <ram:GrossPriceProductTradePrice>
+                    <ram:ChargeAmount>9999</ram:ChargeAmount>
+                </ram:GrossPriceProductTradePrice>
+            </ram:SpecifiedLineTradeAgreement>
+            <ram:SpecifiedLineTradeDelivery>
+                <ram:BilledQuantity unitCode="AS">1</ram:BilledQuantity>
+            </ram:SpecifiedLineTradeDelivery>
+            <ram:SpecifiedLineTradeSettlement>
+                <ram:SpecifiedTradeSettlementLineMonetarySummation>
+                    <ram:NetLineTotalAmount>9999</ram:NetLineTotalAmount>
+                    <ram:NetIncludingTaxesLineTotalAmount>10698.93</ram:NetIncludingTaxesLineTotalAmount>
+                </ram:SpecifiedTradeSettlementLineMonetarySummation>
+            </ram:SpecifiedLineTradeSettlement>
+        </ram:IncludedSupplyChainTradeLineItem>
+    </rsm:SupplyChainTradeTransaction>
+     
+    <ds:Signature Id="id-a521f37e269e"
+        xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:SignedInfo>
+            <ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+            <ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+            <ds:Reference>
+                <ds:Transforms>
+                    <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+                </ds:Transforms>
+                <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
+                <ds:DigestValue>/Sqg0JOBPdFX0TFMERc2WEdDbz5kX7FQ9CaXhNcjVBAiEQ7jwP0T0DIx3xkuBTsQmrIZLowJX8SWmFjNHhfyRA==</ds:DigestValue>
+            </ds:Reference>
+            <ds:Reference URI="#xades-id-a521f37e269e" Type="http://uri.etsi.org/01903#SignedProperties">
+                <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+                <ds:DigestValue>MigdoO3JHwhgGDkiZzToheYeJZk=</ds:DigestValue>
+            </ds:Reference>
+        </ds:SignedInfo>
+        <ds:SignatureValue>SEtMPPmZ6x9uOZDVW+QEx9li80Q5wFBxvhgi3kVtDDCI8gvr6KD26Lzwe6EB8iXeakinMvCdOTsXfY90jBCTXOeK3X/u9X21v0osxk6IrfKjSlWr8+Lf7vxAlWlvFCqLETBO8DoDM+6IjNAzjZ7JI4etPg6mnTyUcsCWRIUuv/k=</ds:SignatureValue>
+        <ds:KeyInfo>
+            <ds:KeyValue>
+                <ds:RSAKeyValue>
+                    <ds:Modulus>6FWp9dctGDT17LjYwqmEY0Oqiul2b+Gtt+BpV1OBu6emiZm/OseYKeWTZtr0MhJP1XyNU+ZNhgabDfPAOcSkKm4P6JtvGh+9zDVwQrbu/eZexzkVRKiKyT7xrU90ycZvRIWClQFqeqMJ6vEYcYtxpLXiQKziIw/qcu2b+qHpArM=</ds:Modulus>
+                    <ds:Exponent>AQAB</ds:Exponent>
+                </ds:RSAKeyValue>
+            </ds:KeyValue>
+        </ds:KeyInfo>
+        <ds:Object>
+            <xades:QualifyingProperties Target="#id-a521f37e269e"
+                xmlns:xades="http://uri.etsi.org/01903/v1.3.2#">
+                <xades:SignedProperties Id="xades-id-a521f37e269e">
+                    <xades:SignedSignatureProperties>
+                        <xades:SigningTime>2020-05-30T03:06:17.475Z</xades:SigningTime>
+                        <xades:SigningCertificate>
+                            <xades:Cert>
+                                <xades:CertDigest>
+                                    <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+                                    <ds:DigestValue>8bzdEXsVVBc4E6Qhg8VNuX46fhCdCvqY9LzTJnVKA1E=</ds:DigestValue>
+                                </xades:CertDigest>
+                                <xades:IssuerSerial>
+                                    <ds:X509IssuerName>C=NL, O=QuoVadis Trustlink B.V., OU=Issuing Certification Authority, CN=QuoVadis EU Issuing Certification Authority G2</ds:X509IssuerName>
+                                    <ds:X509SerialNumber>694395474722160626358886281620874695673047986886</ds:X509SerialNumber>
+                                </xades:IssuerSerial>
+                            </xades:Cert>
+                        </xades:SigningCertificate>
+                        <xades:SignatureProductionPlace>
+                            <xades:City>City</xades:City>
+                            <xades:StateOrProvince>State</xades:StateOrProvince>
+                            <xades:PostalCode>Code</xades:PostalCode>
+                            <xades:CountryName>Country</xades:CountryName>
+                        </xades:SignatureProductionPlace>
+                    </xades:SignedSignatureProperties>
+                </xades:SignedProperties>
+            </xades:QualifyingProperties>
+        </ds:Object>
+    </ds:Signature>
+
+</rsm:TaxInvoice_CrossIndustryInvoice>

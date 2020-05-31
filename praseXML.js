@@ -1,24 +1,30 @@
 // let xml_string = fs.readFileSync("ETDA-invoice.xml", "utf8");
-let data = `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalog>
-  <person>
-    <name>John</name>
-    <surname>Smith</surname>
-  </person>
-  <person>
-    <name>Abe</name>
-    <surname>Lincoln</surname>
-  </person>
-  <person>
-    <name>James</name>
-    <surname>Bond</surname>
-  </person>
-</catalog>`;
-const xml2js = require('xml2js');
-xml2js.parseString(data, (err, result) => {
-  result.catalog.person.push({ name: 'Tony', surname: 'Stark' });
-  const builder = new xml2js.Builder();
-  data = builder.buildObject(result);
-  console.log(data);
-  // write data to file
+var fs = require("fs");
+var parser = require('xml2json');
+
+
+var xmlSig = fs.readFileSync('signature.xml');
+
+fs.readFile( './ETDA-invoice.xml', function(err, data) {
+    var xmlref = fs.readFileSync('signed-invoice.xml');
+    var jsonref = JSON.parse(parser.toJson(xmlref, {reversible:true}));
+
+    var json = JSON.parse(parser.toJson(data, {reversible: true}));
+    var jsonSig = JSON.parse(parser.toJson(xmlSig));
+    Object.assign(json["rsm:TaxInvoice_CrossIndustryInvoice"], 
+                  jsonSig);
+
+    var stringified = JSON.stringify(jsonref);
+    // var stringified = JSON.stringify(json);
+    var xml = parser.toXml(stringified);
+    fs.writeFile('output.xml', xml, function(err, data) {
+      if (err) {
+        console.log(err);
+      }
+      else {
+        console.log('updated!');
+      }
+    });
 });
+
+console.log('done')
